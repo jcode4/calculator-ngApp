@@ -8,6 +8,7 @@
 
 # Node
 /node_modules
+/dist
 npm-debug.log
 yarn-error.log
 
@@ -40,3 +41,17 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Environment variables
+.env*
+
+# Angular CLI configuration
+.angular-cli.json
+.angular.json
+
+# TypeScript configuration
+*.tsbuildinfo
+
+# End of line markers
+**/*.orig
+**/*.bak
