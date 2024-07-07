@@ -1,0 +1,38 @@
+/* calculator.component.css */
+.calculator {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .input-section {
+    margin-bottom: 10px;
+  }
+  
+  .result-section {
+    margin-top: 10px;
+  }
+  
+  .error-section {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  button {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  

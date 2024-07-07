@@ -58,6 +58,9 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "proxyConfig": "proxy.conf.json"  
+          },
           "configurations": {
             "production": {
               "browserTarget": "calculator-app:build:production"
@@ -94,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "e7c98f7c-57ce-4d84-97f6-fd35fd33ab91"
   }
 }

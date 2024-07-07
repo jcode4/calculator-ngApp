@@ -1,0 +1,30 @@
+<!-- calculator.component.html -->
+<div class="calculator">
+    <div class="input-section">
+        <label>Username:</label>
+        <input type="text" [(ngModel)]="username" placeholder="Enter username">
+      </div>
+    <div class="input-section" *ngIf="username">
+      <label>First Number:</label>
+      <input type="number" [(ngModel)]="firstNumber" (blur)="setFirstNumber()">
+    </div>
+    <div class="input-section" *ngIf="username">
+      <label>Second Number:</label>
+      <input type="number" [(ngModel)]="secondNumber" (blur)="setSecondNumber()">
+    </div>
+    <div class="input-section" *ngIf="username">
+      <label>Operation:</label>
+      <select [(ngModel)]="selectedOperation" (change)="performCalculation()">
+        <option *ngFor="let operation of allowedOperations" [value]="operation">{{ operation }}</option>
+      </select>
+    </div>
+    <div class="result-section">
+      <label>Result:</label>
+      <span>{{ result | number:'1.4-4' }}</span>
+    </div>
+    <div class="error-section" *ngIf="errorMessage">
+      <span>{{ errorMessage }}</span>
+    </div>
+    <button (click)="clearNumbers()">Clear</button>
+  </div>
+  
